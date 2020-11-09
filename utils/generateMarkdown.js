@@ -16,24 +16,18 @@ function generateMarkdown(data) {
   <a href="#Tests">Tests</a> <br>
   <a href="#Questions">Questions</a> <br>
   
-  ##Installation
-  ${data.install}
-  ${`<br>`}
-  ##Usage
-  ${data.usage}
-  ${`<br>`}
-  ##License
-  ${data.license}
-  ${`<br>`}
-  ##Contributing
-  ${data.contributors}
-  ${`<br>`}
-  ##Tests
-  ${data.test}
-  ${`<br>`}
-  ##Questions
-  ${githublink}
-  ${`<br>`}
+  ## Installation
+  ${`<br>`}${data.install}${`<br>`}
+  ## Usage
+  ${`<br>`}${data.usage}${`<br>`}
+  ## License
+  ${`<br>`}${data.license}${`<br>`}
+  ## Contributing
+  ${`<br>`}${data.contributors}${`<br>`}
+  ## Tests
+  ${`<br>`}${data.test}${`<br>`}
+  ## Questions
+  ${`<br>`}${githublink}${`<br>`}
 
 
 
