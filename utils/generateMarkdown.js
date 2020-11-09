@@ -4,9 +4,37 @@ function generateMarkdown(data) {
   return `
   
   
-  # ${data.title}
-  # a project by ${data.contributors}
-  # ${githublink}
+  # **${data.title}**
+
+  ## ${data.description}
+
+  ## TABLE OF CONTENTS
+  <a href="#Installation">Installation</a>
+  <a href="#Usage">Usage</a>
+  <a href="#License">License</a>
+  <a href="#Contributing">Contributing</a>
+  <a href="#Tests">Tests</a>
+  <a href="#Questions">Questions</a>
+  
+  ##Installation
+  ${data.install}
+  ${`<br>`}
+  ##Usage
+  ${data.usage}
+  ${`<br>`}
+  ##License
+  ${data.license}
+  ${`<br>`}
+  ##Contributing
+  ${data.contributors}
+  ${`<br>`}
+  ##Tests
+  ${data.test}
+  ${`<br>`}
+  ##Questions
+  ${githublink}
+  ${`<br>`}
+
 
 
 
