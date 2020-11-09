@@ -49,16 +49,6 @@ const questions = [
 var ui = new inquirer.ui.BottomBar();
 ui.log.write("__________WELCOME TO THE README GENERATOR__________");
 
-
-// function to write README file
-// function writeToFile(fileName, answers) {
-//     fs.writeFile(file, JSON.stringify(answers, null, "\t"), function(err){
-//         if (err){
-//             return console.log(err);
-//         }
-//     })
-// }
-
 // function to initialize program
 function init() {
     return inquirer.prompt(questions);
@@ -68,7 +58,7 @@ function init() {
 init()
     .then(function(answers){
         var file = answers.title.toLowerCase().split(" ").join("");
-        fs.writeFile(file + ".md", JSON.stringify(answers,null, "\t"), function(err){
+        fs.writeFile(file + ".md", generateMarkdown(answers), function(err){
             if (err){
                 return console.log(err);
             }
