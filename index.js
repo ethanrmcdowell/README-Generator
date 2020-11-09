@@ -1,11 +1,17 @@
-var inquirer = require("inquirer");
+const inquirer = require("inquirer");
+const fs = require("fs");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
 const questions = [
     {
         type: "input",
+        name: "contributors",
+        message: "Welcome to the README generator! Please enter the names for all contributors on the project."
+    },{
+        type: "input",
         name: "title",
-        message: "Welcome to the README generator! What is the title of your project?"
+        message: "What is the title of your project?"
     },{
         type: "input",
         name: "description",
@@ -13,15 +19,15 @@ const questions = [
     },{
         type: "input",
         name: "install",
-        message: "Please provide any installation instructions you have."
+        message: "Provide any installation instructions you have."
     },{
         type: "input",
         name: "usage",
-        message: "Please provide any usage information you have."
+        message: "Provide any usage information you have."
     },{
-        type: "list",
+        type: "checkbox",
         name: "license",
-        message: "Please choose an option regarding licensure for your project.",
+        message: "Choose an option regarding licensure for your project.",
         choices: [
             "Perl",
             "MIT",
@@ -31,8 +37,8 @@ const questions = [
         ]
     },{
         type: "input",
-        name: "contributors",
-        message: "Please list all contributors to the project."
+        name: "github",
+        message: "Enter your GitHub user name."
     },{
         type: "input",
         name: "test",
@@ -40,14 +46,34 @@ const questions = [
     }
 ];
 
+var ui = new inquirer.ui.BottomBar();
+ui.log.write("__________WELCOME TO THE README GENERATOR__________");
+
+
 // function to write README file
-function writeToFile(fileName, data) {
-}
+// function writeToFile(fileName, answers) {
+//     fs.writeFile(file, JSON.stringify(answers, null, "\t"), function(err){
+//         if (err){
+//             return console.log(err);
+//         }
+//     })
+// }
 
 // function to initialize program
 function init() {
-
+    return inquirer.prompt(questions);
 }
 
 // function call to initialize program
-init();
+init()
+    .then(function(answers){
+        var file = answers.title.toLowerCase().split(" ").join("");
+        fs.writeFile(file + ".md", JSON.stringify(answers,null, "\t"), function(err){
+            if (err){
+                return console.log(err);
+            }
+        });
+    })
+    .catch(function(err){
+        console.log(err);
+    });
