@@ -1,52 +1,42 @@
-// function to generate markdown for README
-function generateMarkdown(data) {
-  var githublink = ("<a href='https://github.com/" + `${data.github}` + "'>Github</a>");
-  return `
+
   
   
-  # **${data.title}**
+  # **Ethan's Project**
 
-  ${data.license === "Perl" ? "## Perl \n [![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)" : data.license === "MIT" ? "## MIT \n [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)" : data.license === "IBM" ? "## IBM \n [![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)" : data.license === "Mozilla" ? "## Mozilla \n [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)" : "## Apache \n [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"}
+  ## IBM 
+ [![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)
 
-  ## ${data.description}
+  ## This Agreement is governed by the laws of the State of New York and the intellectual property laws of the United States of America. No party to this Agreement will bring a legal action under this Agreement more than one year after the cause of action arose. Each party waives its rights to a jury trial in any resulting litigation.
 
   ## TABLE OF CONTENTS
   
-  - [Installation](#Installation) \n
-  - [Usage](#Usage) \n
-  - [License](#License) \n
-  - [Contributing](#Contributing) \n
-  - [Tests](#Tests) \n
-  - [Questions](#Questions) \n
+  - [Installation](#Installation) 
+
+  - [Usage](#Usage) 
+
+  - [License](#License) 
+
+  - [Contributing](#Contributing) 
+
+  - [Tests](#Tests) 
+
+  - [Questions](#Questions) 
+
   
   ## Installation
-  \n ${data.install} \n
-  ## Usage
-  \n ${data.usage} \n
-  ## License
-  \n ${data.license} \n
-  ${data.license === "Apache" ? 
-  `"Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at \n
-
-  > http://www.apache.org/licenses/LICENSE-2.0 \n
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License."}"` :
-  data.license === "MIT" ?
-  `"Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
   
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."` :
-  data.license === "Mozilla" ?
-  `"This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/."` :
-  data.license === "IBM" ?
-  `"IBM Public License Version 1.0 (IPL-1.0) \n
+ `npm i ethanproject` 
+
+  ## Usage
+  
+ Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, distribute and sublicense the Contribution of such Contributor, if any, and such derivative works, in source code and object code form. 
+
+  ## License
+  
+ IBM 
+
+  "IBM Public License Version 1.0 (IPL-1.0) 
+
   THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS IBM PUBLIC LICENSE ("AGREEMENT"). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES RECIPIENT'S ACCEPTANCE OF THIS AGREEMENT.
 
 1. DEFINITIONS
@@ -112,17 +102,19 @@ IBM may publish new versions (including revisions) of this Agreement from time t
 
 This Agreement is governed by the laws of the State of New York and the intellectual property laws of the United States of America. No party to this Agreement will bring a legal action under this Agreement more than one year after the cause of action arose. Each party waives its rights to a jury trial in any resulting litigation.
   
-  "`
-  : "Hello"}
-  \n
+  "
+  
+
   ## Contributing
-  \n ${data.contributors} \n
+  
+ Ethan 
+
   ## Tests
-  \n ${data.test} \n
+  
+ "Recipient" means anyone who receives the Program under this Agreement, including all Contributors. 
+
   ## Questions
-  \n ${githublink} \n
+  
+ <a href='https://github.com/ethanrmcdowell'>Github</a> 
 
-`;
-}
 
-module.exports = generateMarkdown;
