@@ -9,12 +9,12 @@ function generateMarkdown(data) {
   ## ${data.description}
 
   ## TABLE OF CONTENTS
-  <a href="#Installation">Installation</a>
-  <a href="#Usage">Usage</a>
-  <a href="#License">License</a>
-  <a href="#Contributing">Contributing</a>
-  <a href="#Tests">Tests</a>
-  <a href="#Questions">Questions</a>
+  <a href="#Installation">Installation</a> <br>
+  <a href="#Usage">Usage</a> <br>
+  <a href="#License">License</a> <br>
+  <a href="#Contributing">Contributing</a> <br>
+  <a href="#Tests">Tests</a> <br>
+  <a href="#Questions">Questions</a> <br>
   
   ##Installation
   ${data.install}
