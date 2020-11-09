@@ -25,7 +25,7 @@ const questions = [
         name: "usage",
         message: "Provide any usage information you have."
     },{
-        type: "checkbox",
+        type: "list",
         name: "license",
         message: "Choose an option regarding licensure for your project.",
         choices: [
@@ -33,7 +33,7 @@ const questions = [
             "MIT",
             "IBM",
             "Mozilla",
-            "None"
+            "Apache"
         ]
     },{
         type: "input",
