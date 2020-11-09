@@ -5,7 +5,7 @@ function generateMarkdown(data) {
   
   # ${data.title}
   # a project by ${data.contributors}
-  # <a href="'https://github.com/' + ${data.github}">Github</a>
+  # <a href="https://github.com/" + ${data.github}>Github</a>
 
 
 
