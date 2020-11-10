@@ -1,7 +1,7 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   var githublink = ("<a href='https://github.com/" + `${data.github}` + "'>" + `${data.github}` + "</a>");
-  var githublink2 = ("<a href='https://github.com/" + `${data.github2}` + "'>" + `${data.github}` + "</a>");
+  var githublink2 = ("<a href='https://github.com/" + `${data.github2}` + "'>" + `${data.github2}` + "</a>");
   return `
   
   

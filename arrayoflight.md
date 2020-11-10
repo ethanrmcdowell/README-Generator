@@ -5,7 +5,7 @@
 
   [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-  This project creates an array titled "Light" which burns your computer with radiant light.
+  This application creates an array entitled "LIGHT" which destroys your computer with radiant light.
 
   ## TABLE OF CONTENTS
   
@@ -42,13 +42,13 @@
 
   ## Tests
   
- NONE. 
+ ```import madonna from 'hell';``` 
 
   ## Questions
   
  :link: <a href='https://github.com/ethanrmcdowell'>ethanrmcdowell</a>
   
- :link: <a href='https://github.com/madonna'>ethanrmcdowell</a>
+ :link: <a href='https://github.com/madonna'>madonna</a>
   
  :e-mail: ethan.r.mcdowell@gmail.com
 
