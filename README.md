@@ -1,6 +1,8 @@
   # **README Generator**
 
   This application will generate a README for your project based on prompts in the command line. Using Node.js, you can launch the index.js file which will proceed to ask multiple questions which, upon completion, will populate a README file for.
+  
+  :video_camera: [Video Demo](https://youtu.be/Wjkx-ff0JAg)
 
   ## TABLE OF CONTENTS
   
