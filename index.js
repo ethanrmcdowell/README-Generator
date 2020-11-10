@@ -25,17 +25,6 @@ const questions = [
         name: "usage",
         message: "Provide any usage information you have."
     },{
-        type: "list",
-        name: "license",
-        message: "Choose an option regarding licensure for your project.",
-        choices: [
-            "Perl",
-            "MIT",
-            "IBM",
-            "Mozilla",
-            "Apache"
-        ]
-    },{
         type: "input",
         name: "github",
         message: "Enter your GitHub user name."
@@ -43,6 +32,17 @@ const questions = [
         type: "input",
         name: "test",
         message: "Please enter any testing instructions for your application."
+    },{
+        type: "list",
+        name: "license",
+        message: "Choose an option regarding licensure for your project.",
+        choices: [
+            "Apache License v2.0",
+            "GNU General Public License v3.0",
+            "MIT License",
+            "Other",
+            "None"
+        ]
     }
 ];
 
@@ -51,13 +51,26 @@ ui.log.write("__________WELCOME TO THE README GENERATOR__________");
 
 // function to initialize program
 function init() {
-    return inquirer.prompt(questions);
+    return inquirer.prompt(questions)
 }
 
 // function call to initialize program
 init()
     .then(function(answers){
         var file = answers.title.toLowerCase().split(" ").join("");
+        if(answers.license !== "None"){
+            inquirer.prompt([
+                {
+                    type: "number",
+                    name: "year",
+                    message: "Please enter the 4-digit copyright year."
+                },{
+                    type: "input",
+                    name: "name",
+                    message: "Enter the name of the copyright owner."
+                }
+                ]);
+        }
         fs.writeFile(file + ".md", generateMarkdown(answers), function(err){
             if (err){
                 return console.log(err);
