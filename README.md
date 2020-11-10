@@ -26,7 +26,8 @@
   
   ## Images
 
-
+  ![CLI Interface Image](Capture1.JPG)
+  ![README Output Example](Capture2.JPG)
 
   ## License
   
