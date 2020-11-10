@@ -33,6 +33,15 @@ const questions = [
         name: "github",
         message: "Enter your GitHub user name."
     },{
+        type: "confirm",
+        name: "moregithub",
+        message: "Would you like to add an additional Github user?"
+    },{
+        type: "input",
+        name: "github2",
+        message: "Please enter an additional GitHub user name.",
+        when: (answers) => answers.moregithub === true
+    },{
         type: "input",
         name: "email",
         message: "Enter an e-mail address associated with this project."

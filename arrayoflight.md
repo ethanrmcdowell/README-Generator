@@ -5,7 +5,7 @@
 
   [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-  ## A glowing array shoots at you from the sun, each array item smashing into your face causing severe damage.
+  This project creates an array titled "Light" which burns your computer with radiant light.
 
   ## TABLE OF CONTENTS
   
@@ -28,11 +28,11 @@
 
   ## Usage
   
- `const arraylight = require("arraylight");` 
+ `const arraylight = require("arraylight"); 
 
   ## License
   
- Copyright 1987 Ethan R. McDowell
+ Copyright 1991 Ethan R. McDowell
   
  Licensed under GNU General Public License v3.0 
 
@@ -47,6 +47,8 @@
   ## Questions
   
  :link: <a href='https://github.com/ethanrmcdowell'>Github</a>
+  
+ :link: <a href='https://github.com/madonna'>Github</a>
   
  :e-mail: ethan.r.mcdowell@gmail.com
 
