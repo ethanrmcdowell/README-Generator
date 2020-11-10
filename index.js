@@ -26,12 +26,16 @@ const questions = [
         message: "Provide any usage information you have."
     },{
         type: "input",
+        name: "test",
+        message: "Please enter any testing instructions for your application."
+    },{
+        type: "input",
         name: "github",
         message: "Enter your GitHub user name."
     },{
         type: "input",
-        name: "test",
-        message: "Please enter any testing instructions for your application."
+        name: "email",
+        message: "Enter an e-mail address associated with this project."
     },{
         type: "list",
         name: "license",
