@@ -57,6 +57,11 @@ const questions = [
             "None"
         ]
     },{
+        type: "input",
+        name: "other",
+        message: "Enter the name of the license.",
+        when: (answers) => answers.license === "Other"
+    },{
         type: "number",
         name: "year",
         message: "Please enter the 4-digit copyright year.",
