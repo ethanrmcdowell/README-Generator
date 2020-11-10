@@ -33,8 +33,8 @@ function generateMarkdown(data) {
   ## Tests
   \n ${data.test} \n
   ## Questions
-  \n :link: (GitHub)[https://github.com/${data.github2}]
-  ${data.moregithub === true ? "\n :link: (GitHub)[https://github.com/" + `${data.github2}` + "]" : ""}
+  \n :link: https://github.com/${data.github2}
+  ${data.moregithub === true ? "\n :link: https://github.com/" + `${data.github2}` : ""}
   \n :e-mail: ${data.email}
 
 `;
