@@ -43,6 +43,16 @@ const questions = [
             "Other",
             "None"
         ]
+    },{
+        type: "number",
+        name: "year",
+        message: "Please enter the 4-digit copyright year.",
+        when: (answers) => answers.license !== "None"
+    },{
+        type: "input",
+        name: "name",
+        message: "Enter the name of the copyright owner.",
+        when: (answers) => answers.license !== "None"
     }
 ];
 
@@ -58,19 +68,6 @@ function init() {
 init()
     .then(function(answers){
         var file = answers.title.toLowerCase().split(" ").join("");
-        if(answers.license !== "None"){
-            inquirer.prompt([
-                {
-                    type: "number",
-                    name: "year",
-                    message: "Please enter the 4-digit copyright year."
-                },{
-                    type: "input",
-                    name: "name",
-                    message: "Enter the name of the copyright owner."
-                }
-                ]);
-        }
         fs.writeFile(file + ".md", generateMarkdown(answers), function(err){
             if (err){
                 return console.log(err);
