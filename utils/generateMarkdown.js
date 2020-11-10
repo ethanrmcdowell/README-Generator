@@ -25,8 +25,8 @@ function generateMarkdown(data) {
   ## Usage
   \n ${data.usage} \n
   ## License
-  \n Copyright ${data.year} ${data.name}
-  \n Licensed under ${data.license === "Other" ? `${data.other}` : data.license === "None" ? "" : data.license }
+  \n ${data.license !== "None" ? "Copyright " + `${data.year}` + " - " + `${data.name}` : ""}
+  \n ${data.license !== "None" || "Other" ? "Licensed under " + `${data.license}` : data.license === "Other" ? "Licensed under " + `${data.other}` : ""}
   \n
   ## Contributing
   \n ${data.contributors} \n

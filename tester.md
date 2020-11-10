@@ -1,11 +1,11 @@
 
   
   
-  # **hdjakshkjdas**
+  # **TESTER**
 
   
 
-  hdkjashdkjashkjdsa
+  TESTING TESTING TEST TEST OH HI
 
   ## TABLE OF CONTENTS
   
@@ -24,26 +24,26 @@
   
   ## Installation
   
- `hjkdsajkhdkjsahkj` 
+ `npm i testing` 
 
   ## Usage
   
- `hkjdsahkjdhkjashdkj` 
+ `hjshdakjsa testing dghjkas` 
 
   ## License
   
- Copyright 1988 Ethan R McDowell
+ Copyright 1991 - Ethan R. McDowell
   
- Licensed under IBM
+ Licensed under Other
   
 
   ## Contributing
   
- Ethan McDowell 
+ ETHAN MCDOWELL 
 
   ## Tests
   
- ```var hdkjsahdkjsa = console.log("hdkjashkj");``` 
+ ```nothing here const nothing === ("nothing");``` 
 
   ## Questions
   
