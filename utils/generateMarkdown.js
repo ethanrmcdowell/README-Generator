@@ -1,7 +1,6 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   var githublink = ("<a href='https://github.com/" + `${data.github}` + "'>Github</a>");
-  var emaillink = ("<a href='mailto:" + `${data.email}` + "'></a>");
   return `
   
   
@@ -32,7 +31,7 @@ function generateMarkdown(data) {
   ## Tests
   \n ${data.test} \n
   ## Questions
-  \n ${githublink} \n ${emaillink}
+  \n ${githublink} \n ${data.email}
 
 `;
 }
