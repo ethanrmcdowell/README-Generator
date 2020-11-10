@@ -31,7 +31,8 @@ function generateMarkdown(data) {
   ## Tests
   \n ${data.test} \n
   ## Questions
-  \n ${githublink} \n ${data.email}
+  \n :link: ${githublink}
+  \n :e-mail: ${data.email}
 
 `;
 }
