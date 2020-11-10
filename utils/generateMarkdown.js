@@ -26,14 +26,14 @@ function generateMarkdown(data) {
   \n ${data.usage} \n
   ## License
   \n ${data.license !== "None" ? "Copyright " + `${data.year}` + " - " + `${data.name}` : ""}
-  \n ${data.license === "Other" ? "Licensed under " + `${data.other}` : data.license === "None" ? "" : "Licensed under " + data.license}
+  \n ${data.license === "Other" ? "Licensed under " + `${data.other}` : data.license === "None" ? "None" : "Licensed under " + data.license}
   \n
   ## Contributing
   \n ${data.contributors} \n
   ## Tests
   \n ${data.test} \n
   ## Questions
-  \n :link: https://github.com/${data.github2}
+  \n :link: https://github.com/${data.github}
   ${data.moregithub === true ? "\n :link: https://github.com/" + `${data.github2}` : ""}
   \n :e-mail: ${data.email}
 
