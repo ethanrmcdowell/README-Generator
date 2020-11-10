@@ -1,11 +1,11 @@
 
   
   
-  # **TESTER**
+  # **tester**
 
   
 
-  hdjksahdkjashkjdahskjdhas kjdhaskj dkasjhdkjashkdj ahskjdy123098 hdasjhkjh39802wqh kljsahdkjas
+  hhjdkashk dsahj dahsjkdh89d3h89dkjas dausiod yiuyas ydui ydiuashdh jas
 
   ## TABLE OF CONTENTS
   
@@ -24,17 +24,17 @@
   
   ## Installation
   
- `hkjdsahkjdas i ndkjlashdkjash` 
+ `npm i tester` 
 
   ## Usage
   
- `hjkdsahkj dhsajk dahsjk` 
+ `nope shut up` 
 
   ## License
   
  Copyright 1991 - Ethan R. McDowell
   
- Licensed under Other
+ Licensed under IBM
   
 
   ## Contributing
@@ -43,7 +43,7 @@
 
   ## Tests
   
- ```hdasjkdkjashhjkdas var hdjkash das const dhgakjshdks``` 
+ ```var none = "i don't have any instructions"``` 
 
   ## Questions
   
