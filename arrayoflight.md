@@ -24,11 +24,11 @@
   
   ## Installation
   
- `npm i arraylight` 
+ `npm i arrayoflight` 
 
   ## Usage
   
- `const arraylight = require("arraylight"); 
+ `const arrayoflight = require("arrayoflight");` 
 
   ## License
   
@@ -46,9 +46,9 @@
 
   ## Questions
   
- :link: <a href='https://github.com/ethanrmcdowell'>Github</a>
+ :link: <a href='https://github.com/ethanrmcdowell'>ethanrmcdowell</a>
   
- :link: <a href='https://github.com/madonna'>Github</a>
+ :link: <a href='https://github.com/madonna'>ethanrmcdowell</a>
   
  :e-mail: ethan.r.mcdowell@gmail.com
 
