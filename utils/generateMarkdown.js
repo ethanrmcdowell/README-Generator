@@ -1,7 +1,7 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  var githublink = ("<a href='https://github.com/" + `${data.github}` + "'>" + `${data.github}` + "</a>");
-  var githublink2 = ("<a href='https://github.com/" + `${data.github2}` + "'>" + `${data.github2}` + "</a>");
+  // var githublink = (["GitHub"]("https://github.com/" + `${data.github}`));
+  // var githublink2 = (["GitHub"]("https://github.com/" + `${data.github2}`));
   return `
   
   
@@ -33,8 +33,8 @@ function generateMarkdown(data) {
   ## Tests
   \n ${data.test} \n
   ## Questions
-  \n :link: ${githublink}
-  ${data.moregithub === true ? "\n :link: " + `${githublink2}` : ""}
+  \n :link: (GitHub)[https://github.com/${data.github2}]
+  ${data.moregithub === true ? "\n :link: (GitHub)[https://github.com/" + `${data.github2}` + "]" : ""}
   \n :e-mail: ${data.email}
 
 `;
