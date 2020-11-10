@@ -24,11 +24,11 @@
   
   ## Installation
   
- Install with `npm` \n - `npm i goldengirls` \n - `$ goldengirls` 
+ `npm i goldengirls` 
 
   ## Usage
   
- Clone repo and create a new branch: `$ git checkout https://github.com/dasdasdasdas/dasdsds -b name_for_new_branch.` 
+ The Golden Girls came to an end when Bea Arthur chose to leave the series. In the hour-long series finale, which aired in May 1992, Dorothy meets and marries Blanche's uncle Lucas (Leslie Nielsen) and moves to Hollingsworth Manor in Atlanta. Sophia is to join her, but in the end, she stays behind with the other women in Miami. This led into the spin-off series, The Golden Palace.<br/> `The series finale of The Golden Girls was watched by 27.2 million viewers. As of 2016, it was the 17th-most watched television finale.` 
 
   ## License
   
@@ -43,7 +43,7 @@
 
   ## Tests
   
- - I don't know what to put here \n - I also don't know what to put here \n - This is just an example so I can show you my application is working 
+ `Celebrities Alex Trebek, Merv Griffin, Johnny Gilbert, Jeane Dixon, Burt Reynolds, Marvin Mitchelson, Edwin Newman, Bob Hope, Sonny Bono, Lyle Waggoner, and Julio Iglesias all guest starred as themselves on various episodes.` 
 
   ## Questions
   
