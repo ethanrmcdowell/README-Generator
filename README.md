@@ -20,7 +20,7 @@
   ## Features
   - Uses inquirer.js to prompt user for information on project.
   - Utilizes inquirer 'when' statements in order to get more information based on your responses. \n
-  `Example: if you enter 'other' into the licensing section, it will prompt you for the name of your license. If you enter 'None' it will skip that question as well as the questions asking for the year and name of copyright holder.`
+    - Example: if you enter 'other' into the licensing section, it will prompt you for the name of your license. If you enter 'None' it will skip that question as well as the questions asking for the year and name of copyright holder.
   - Allows you to enter an additional GitHub link to the README in case there's more than one person working on your project.
   - Provides working table of contents which will link you to each section of the readme.
   
