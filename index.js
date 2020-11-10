@@ -2,7 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// array of questions for user
+// QUESTIONS ARRAY
 const questions = [
     {
         type: "input",
@@ -74,15 +74,16 @@ const questions = [
     }
 ];
 
+// UI VARIABLES
 var ui = new inquirer.ui.BottomBar();
 ui.log.write("__________WELCOME TO THE README GENERATOR__________");
 
-// function to initialize program
+// FUNCTION TO INITIALIZE PROGRAM - WHEN CALL PROMPTS USER
 function init() {
     return inquirer.prompt(questions)
 }
 
-// function call to initialize program
+// FUNCTION CALL TO INITIATE PROGRAM AND SAVE DATA TO FILE USING GENERATEMARKDOWN.JS
 init()
     .then(function(answers){
         var file = answers.title.toLowerCase().split(" ").join("");
@@ -90,6 +91,7 @@ init()
             if (err){
                 return console.log(err);
             }
+            console.log("File " + file + ".md has been created succesfully!")
         });
     })
     .catch(function(err){
